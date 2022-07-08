@@ -31,7 +31,7 @@ func GetUser(c echo.Context) error {
 
 func Save(c echo.Context) error {
 	user := User{}
-	if err := c.Bind(&user); err != nil { //err is return handler
+	if err := c.Bind(&user); err != nil { //err is method return handler
 		return err
 	}
 

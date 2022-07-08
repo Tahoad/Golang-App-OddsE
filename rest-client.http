@@ -1,11 +1,11 @@
 ###
-http://localhost:1234/users/1111
+http://localhost:1234/users/1112
 ###
 POST http://localhost:1234/users
 Content-Type:application/json
 
 {
-    "id":"1111",
+    "id":"1112",
     "name" : "tahoad chaisri",
     "email" : "tahoad@gmail.com"
 }
@@ -17,3 +17,14 @@ Content-Type: : application/json
     
 }
 ###
+POST http://localhost:1234/registEmp
+Content-Type:application/json
+
+{
+    "id":"1112",
+    "username":"tahoad",
+    "password":"12345",
+    "email" : "tahoad@gmail.com",
+    "name" : "tahoad",
+    "surname":"chaisri"
+}

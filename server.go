@@ -1,6 +1,7 @@
 package main
 
 import (
+	emp "golang-app/employees"
 	u "golang-app/users"
 
 	db "golang-app/db"
@@ -13,7 +14,8 @@ import (
 func main() {
 
 	db.DB()
-	db.Migrate()
+	db.MigrateUser()
+	db.MigrateEmp()
 
 	e := echo.New()
 
@@ -27,6 +29,8 @@ func main() {
 	e.PUT("/users/:id", u.Update)
 
 	e.DELETE("/users", u.Delete)
+
+	e.POST("/registEmp", emp.RegisterEmployee)
 
 	e.Logger.Fatal(e.Start(":1234"))
 
