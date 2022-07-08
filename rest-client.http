@@ -1,0 +1,19 @@
+###
+http://localhost:1234/users/1111
+###
+POST http://localhost:1234/users
+Content-Type:application/json
+
+{
+    "id":"1111",
+    "name" : "tahoad chaisri",
+    "email" : "tahoad@gmail.com"
+}
+###
+PUT http://localhost:1234/users/12345
+Content-Type: : application/json
+
+{
+    
+}
+###
